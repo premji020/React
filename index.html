@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+    <style>
+        .center{text-align: center;}
+
+        table, td, th {
+  border: 1px solid black;
+}
+
+        table {
+  
+  border-collapse: collapse;
+}
+
+        
+    </style>
+    
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        let Title = () => { 
+            return(<h1 className="center">RESUME</h1> )
+        }
+
+        let Subtitle = () =>{
+            return (<h2 className="">John Doe</h2>)
+            }
+
+        let Subtitle1 = () =>{
+           return ( <h3>John@mail.com</h3> )
+        }
+
+        let Subtitle2 = () =>{ 
+            return (<h3>   Contact: 9876543210</h3>)
+         }
+
+        let Subtitle3 = () =>{  
+            return ( <h3>  ABOUT: </h3>)
+        }
+
+        let Aboutcontent = () =>{
+            return (<p>A vibrant passionate guy who is willing to break any barriers in the quest to attain knowledge</p>)
+        }
+        
+
+        let Experience = () =>{
+            return(
+                <h3>  EXPERIENCE: </h3>
+            );
+
+        }
+
+       let ExperienceCont = () =>{
+         return(   <ul>   
+        Worked as a archealogist in JC museum for 3 years
+    </ul>)
+        }
+
+       let Education = () =>{
+            return(  <h3>
+        EDUCATION:
+    </h3> )
+        }
+
+        let Description = () =>{
+            return(
+                <table>
+                    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Degree</th>
+            <th>CGPA</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>ABC MHSS</td>
+            <td>10th STD</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>ABC MHSS</td>
+            <td>12th STD</td>
+            <td>84</td>
+          </tr>
+          <tr>
+            <td>ABC college</td>
+            <td>UG</td>
+            <td>70</td>
+          </tr>
+          </tbody>
+    </table>
+            )
+        }
+
+        let MainCont = () =>{
+            return(
+                <h3> PROJECTS </h3>
+        
+            
+            )
+        }
+
+        let MainCont1 = () =>{
+            return(
+                <ol>
+           <li>Bionic leg smart app </li>
+           <li>Railway Timings app </li>
+           <li>REST countries App </li>
+           <li>Calculator App </li> 
+    </ol> 
+            )
+        }
+
+        let MainCont2 = () =>{
+            return(
+                <h3> SKILLS </h3>
+            )
+        }
+
+        let MainCont3 = () =>{
+            return(
+                <ol>
+           <li>C,C++ </li>
+           <li>HTML,CSS,Bootstrap </li>
+           <li>JavaScript </li>
+           <li>Python </li> 
+    </ol>  
+            )
+        }
+        let MainCont4 = () =>{
+            return(   <h3> EXTRA CURRICULAR ACTIVITIES </h3>)
+        }
+
+        let MainCont5 = () =>{
+            return(  <ul>
+           <li>Cooking </li>
+           <li>Painting </li>
+           <li>Gaming </li>
+           <li>Video editing </li> 
+           <li>Meme Creating </li>
+    </ul>)
+        }
+
+        let OtherSkills = () =>{
+            return(     <h3>LANGUAGES</h3>)
+        }
+
+        let OtherSkills2 = () =>{
+            return(
+                <ul>
+            <li>Tamil</li>
+            <li>English</li>
+            <li>French</li>
+            <li>German</li>
+            </ul>
+            )
+        }
+
+        let Footer = ()=>{
+            return(
+                <footer>
+        Address : No 11,vivekananda statue,Chepauk,Chennai-02
+    </footer>
+            )
+        }
+
+        let App = ()=>{
+            return( 
+                <div>
+                <Title />
+                <Subtitle />
+                <Subtitle1 />
+                <Subtitle2 />
+                <Subtitle3 />
+                <Aboutcontent />
+                <Experience />
+                <ExperienceCont />
+                <Education />
+                <Description />
+                <MainCont />
+                <MainCont1 />
+                <MainCont2 />
+                <MainCont3 />
+                <MainCont4 />
+                <MainCont5 />
+                <OtherSkills />
+                <OtherSkills2 />
+                <Footer />
+            </div>
+            )
+        }
+
+
+    
+
+
+
+
+
+        ReactDOM.render(
+        <App />,
+        document.getElementById('root')
+        );
+
+
+    </script>
+</body>
+</html>
